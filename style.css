@@ -1,0 +1,240 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_bar {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: smaller;
+    position: absolute;
+}
+
+.left_side {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    border: 5px;
+}
+
+.home_button {
+    background-color: rgb(255, 255, 255);
+    width: 51px;
+    height: 26px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    border: 5px;
+}
+
+.explore_button {
+    background-color: rgb(255, 255, 255);
+    width: 51px;
+    height: 26px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.create_button {
+    background-color: rgb(255, 255, 255);
+    width: 51px;
+    height: 26px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.middle_part {
+    display: flex;
+    align-items: center;
+}
+
+.search_bar {
+    background-color: rgb(190, 190, 190);
+    width: 902px;
+    height: 26px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: smaller;
+    margin-top: 3px;
+}
+
+.right_side {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.yourpins_button {
+    background-color: rgb(255, 255, 255);
+    width: 51px;
+    height: 26px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+
+.profile_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user_profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.profile_pic {
+    background-color: black;
+    width: 201px;
+    height: 201px;
+    border-radius: 140px;
+}
+
+.nickname {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.info {
+    display: flex;
+    gap: 10px;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.follows {
+    display: flex;
+    gap: 10px;
+}
+
+.followers {
+    font-weight: bold;
+}
+
+.following {
+    font-weight: bold;
+}
+
+.profile_options {
+    font-weight: 560;
+    display: flex;
+    gap: 10px;
+}
+
+.share_profile{
+    background-color: rgb(161, 161, 161);
+    width: 127px;
+    height: 67px;
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.edit_profile {
+    background-color: rgb(161, 161, 161);
+    width: 127px;
+    height: 67px;
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.types_of_creations {
+display: flex;
+gap: 60px;
+margin-top: 33px;
+font-weight: 570;
+font-size: large;
+}
+
+.created {
+    display: flex;
+    justify-content: center;
+}
+
+.saved {
+    display: flex;
+    justify-content: center;
+}
+
+.boards {
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.board_template {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+}
+
+.board_preview {
+display: flex;
+}
+
+.cover {
+    width:164px;
+    height: 164px;
+    background-color: rgb(53, 53, 53);
+}
+
+.pins_saved {
+    display: flex;
+    flex-direction: column;
+}
+
+.pin_1 {
+    width: 82px;
+    height: 82px;
+    background-color: rgb(104, 104, 104);
+}
+
+.pin_2 {
+    width: 82px;
+    height: 82px;
+    background-color: rgb(145, 145, 145);
+}
+
+.board_title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.content_info {
+    display: flex;
+    gap: 10px;
+    font-size: small;
+}
