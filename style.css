@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navigation Bar */
 .nav_bar {
     background-color: #F6F6F6;
     width: 100%;
@@ -11,7 +12,9 @@ body {
     align-items: center;
     justify-content: space-evenly;
     font-size: smaller;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0
 }
 
 .left_side {
@@ -112,6 +115,8 @@ body {
     border-radius: 140px;
 }
 
+/* Profile Page */
+
 .nickname {
     font-weight: bold;
     font-size: 30px;
@@ -147,7 +152,7 @@ body {
     gap: 10px;
 }
 
-.share_profile{
+.share_profile {
     background-color: rgb(161, 161, 161);
     width: 127px;
     height: 67px;
@@ -170,11 +175,11 @@ body {
 }
 
 .types_of_creations {
-display: flex;
-gap: 60px;
-margin-top: 33px;
-font-weight: 570;
-font-size: large;
+    display: flex;
+    gap: 60px;
+    margin-top: 33px;
+    font-weight: 570;
+    font-size: large;
 }
 
 .created {
@@ -188,25 +193,25 @@ font-size: large;
 }
 
 .boards {
-display: flex;
-flex-direction: row;
-margin-top: 50px;
-flex-wrap: wrap;
-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .board_template {
-display: flex;
-flex-direction: column;
-margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .board_preview {
-display: flex;
+    display: flex;
 }
 
 .cover {
-    width:164px;
+    width: 164px;
     height: 164px;
     background-color: rgb(53, 53, 53);
 }
@@ -237,4 +242,65 @@ display: flex;
     display: flex;
     gap: 10px;
     font-size: small;
+}
+
+/* Home Page */
+
+.home_page {
+    margin-top: 44px;
+    height: 2000px;
+}
+
+.foryoupage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pin {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 180px;
+}
+
+.pin_image {
+    height: 180px;
+    width: 180px;
+}
+
+.pin_image>img {
+    border-radius: 10px;
+}
+
+.pin_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pin_creator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.creators_profile {
+    background-color: #000000;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.pin_title {
+    font-size: large;
+    font-weight: 400;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.pin_creator {
+    font-size: smaller;
 }
