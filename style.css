@@ -298,9 +298,37 @@ body {
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .pin_creator {
     font-size: smaller;
 }
+
+/* Explore Page */
+
+.explore_page {
+    margin-top: 44px;
+    height: 2000px;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date {
+    margin-top: 44px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.text {
+    margin-top: 5px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
