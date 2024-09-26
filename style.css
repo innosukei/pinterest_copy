@@ -1,3 +1,8 @@
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +19,8 @@ body {
     font-size: smaller;
     position: fixed;
     top: 0;
-    right: 0
+    right: 0;
+    z-index: 1;
 }
 
 .left_side {
@@ -92,6 +98,14 @@ body {
     margin-top: 3px;
 }
 
+.profile{
+    background-color: black;
+    width: 26px;
+    height: 26px;
+    border-radius: 140px;
+}
+
+/* Profile Page */
 
 .profile_page {
     display: flex;
@@ -114,8 +128,6 @@ body {
     height: 201px;
     border-radius: 140px;
 }
-
-/* Profile Page */
 
 .nickname {
     font-weight: bold;
@@ -332,3 +344,53 @@ body {
     font-weight: 600;
 }
 
+
+.todays_topics {
+    width: 791px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.topic {
+    position: relative;
+    display: inline-block;
+    height: 243px;
+}
+
+.topic img {
+    border-radius: 30px;
+    /* darkening overlay look-a-like */
+    filter: brightness(60%);
+    width: 365px;
+    height: 243px;
+    display: block;
+}
+
+.topic_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0px, 180px);
+    /* position absolute text section */
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.top_text {
+    font-size: small;
+    color: #ffffff;
+}
+
+.bottom_text {
+    font-size: x-large;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
