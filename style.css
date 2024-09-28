@@ -1,7 +1,11 @@
+* {
+    /* outline: solid 5px #ad3434; */
+}
+
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-  }
+}
 
 body {
     background-color: white;
@@ -64,6 +68,11 @@ body {
     margin-top: 3px;
 }
 
+.left_button_active {
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
 .middle_part {
     display: flex;
     align-items: center;
@@ -78,7 +87,6 @@ body {
     justify-content: start;
     align-items: center;
     font-size: smaller;
-    margin-top: 3px;
 }
 
 .right_side {
@@ -98,11 +106,15 @@ body {
     margin-top: 3px;
 }
 
-.profile{
+.profile {
     background-color: black;
     width: 26px;
     height: 26px;
     border-radius: 140px;
+}
+
+.profile_active {
+    border: solid 3px #ad3434;
 }
 
 /* Profile Page */
@@ -162,11 +174,13 @@ body {
     font-weight: 560;
     display: flex;
     gap: 10px;
+    margin: 8px;
+ 
 }
 
 .share_profile {
     background-color: rgb(161, 161, 161);
-    width: 127px;
+    width: 100px;
     height: 67px;
     border-radius: 67px;
     display: flex;
@@ -184,6 +198,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 3px;
+}
+
+.share_profile:hover {
+background-color: rgb(94, 94, 94);
+}
+
+.edit_profile:hover{
+    background-color: rgb(94, 94, 94);
 }
 
 .types_of_creations {
@@ -210,16 +232,35 @@ body {
     margin-top: 50px;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 .board_template {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.board_template button {
+    background-color: #F6F6F6;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 5px;
+    display: none;
+}
+
+.board_template:hover button{
+display: block;
 }
 
 .board_preview {
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .cover {
@@ -274,6 +315,7 @@ body {
     flex-direction: column;
     gap: 5px;
     width: 180px;
+    position: relative;
 }
 
 .pin_image {
@@ -315,6 +357,37 @@ body {
 
 .pin_creator {
     font-size: smaller;
+}
+
+.overlay {
+    /* IMPORTANT */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    display: none;
+    /* IMPORTANT */
+    background-color: rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+}
+
+.overlay button {
+    margin: 10px;
+    width: 35%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ad3434;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* pin when hover */
+.pin_image:hover .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 /* Explore Page */
