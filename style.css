@@ -106,6 +106,102 @@ body {
     margin-top: 3px;
 }
 
+.notifications {
+    width: 28px;
+    height: 28px;
+}
+
+.notification_dropdown {
+    width: 250px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    Top: 44px;
+    right: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* shadow + blur effect | format : x , y , blur , color */
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.notification_template {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.notification_template:hover {
+    animation: notif_bgc 1.5s;
+    animation: forwards;
+}
+
+@keyframes notif_bgc {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+
+.notification_card {
+    background-color: rgb(43, 43, 43);
+    width: 50px;
+    height: 55px;
+    margin: 20px;
+}
+
+.notification_card img {
+    height: 100%;
+    width: 100%;
+}
+
+.notification_date {
+    display: flex;
+    align-items: top;
+    height: 60%;
+    padding-left: 15px;
+}
+
+.notification_dropdown_expanded {
+    animation: drop_down_reveal 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+    width: 250px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    Top: 44px;
+    right: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* shadow + blur effect | format : x , y , blur , color */
+    box-shadow: 0px 5px 10px #000000;
+}
+
+@keyframes drop_down_reveal {
+    0% {
+        width: 250px;
+        height: 0px
+    }
+
+    100% {
+        width: 250px;
+        height: 470px
+    }
+}
+
+
 .profile {
     background-color: black;
     width: 26px;
@@ -175,7 +271,7 @@ body {
     display: flex;
     gap: 10px;
     margin: 8px;
- 
+
 }
 
 .share_profile {
@@ -201,10 +297,10 @@ body {
 }
 
 .share_profile:hover {
-background-color: rgb(94, 94, 94);
+    background-color: rgb(94, 94, 94);
 }
 
-.edit_profile:hover{
+.edit_profile:hover {
     background-color: rgb(94, 94, 94);
 }
 
@@ -253,8 +349,8 @@ background-color: rgb(94, 94, 94);
     display: none;
 }
 
-.board_template:hover button{
-display: block;
+.board_template:hover button {
+    display: block;
 }
 
 .board_preview {
@@ -302,12 +398,14 @@ display: block;
 .home_page {
     margin-top: 44px;
     height: 2000px;
+    width: 100%;
 }
 
 .foryoupage {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
 }
 
 .pin {
@@ -361,7 +459,7 @@ display: block;
 
 .overlay {
     /* IMPORTANT */
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 180px;
@@ -370,6 +468,17 @@ display: block;
     /* IMPORTANT */
     background-color: rgba(0, 0, 0, 0.644);
     border-radius: 10px;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .overlay button {
@@ -388,6 +497,7 @@ display: block;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    animation: fade-in 1s;
 }
 
 /* Explore Page */
